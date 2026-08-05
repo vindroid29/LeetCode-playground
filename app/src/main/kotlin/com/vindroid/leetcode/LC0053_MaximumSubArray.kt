@@ -11,13 +11,13 @@ fun main() {
 private fun getLongestMaxSum(nums: IntArray): Int {
     if (nums.isEmpty()) return 0
 
-    var currentSum = nums[0]
-    var maxSum = nums[0]
+    var currentSum = nums[0] //5
+    var maxSum = nums[0]    //5
 
-    for (i in 1 until nums.size) {
-        val num = nums[i]
-        currentSum = maxOf(num, currentSum + num)
-        maxSum = maxOf(maxSum, currentSum)
+    for (i in 1 until nums.size) {//1,2,3,4
+        val num = nums[i] //4,-1,7,8
+        currentSum = maxOf(num, currentSum + num) //9,8,15,23
+        maxSum = maxOf(maxSum, currentSum) //9,8,15,23
     }
-    return maxSum
+    return maxSum //9,8,15,23
 }
