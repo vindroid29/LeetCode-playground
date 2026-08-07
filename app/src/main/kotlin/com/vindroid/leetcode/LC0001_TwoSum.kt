@@ -8,7 +8,8 @@ fun main() {
 
     val result = twoSum(given, target)
 
-    println("two sum indices ${result.contentToString()}")
+    println("Input ${given.contentToString()} target : $target")
+    println("Output ${result.contentToString()}")
 
 }
 
