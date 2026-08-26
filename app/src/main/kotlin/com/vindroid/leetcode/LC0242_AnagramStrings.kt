@@ -1,7 +1,5 @@
 package com.vindroid.leetcode
 
-import kotlin.text.iterator
-
 fun main() {
     val str1 = "anagram"
     val str2 = "mganata"
